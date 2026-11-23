@@ -13,16 +13,16 @@ struct Match: Identifiable {
     var homeScore: Int
     var awayScore: Int
     var date: Date
-    var tournamentName: String
+    var tournament: String
     
     init (id: UUID = UUID(), homeTeam: Team, awayTeam: Team, homeScore: Int,
-          awayScore: Int, date: Date = .now, tournamentName: String) {
+          awayScore: Int, date: Date = .now, tournament: String) {
         self.id = id
         self.homeTeam = homeTeam
         self.awayTeam = awayTeam
         self.homeScore = homeScore
         self.awayScore = awayScore
         self.date = date
-        self.tournamentName = tournamentName
+        self.tournament = tournament
     }
 }

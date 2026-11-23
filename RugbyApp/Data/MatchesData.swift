@@ -13,6 +13,10 @@ struct MatchesData {
     static let krasnyjYar = Team(name: "КрЯР", photo: "Krasnyj-Yar")
     static let kuban = Team(name: "КУБ", photo: "Kuban")
     static let vva = Team(name: "ВВА", photo: "Vva")
+    static let lipeck = Team(name: "ЛИП", photo: "Lipeck")
+    static let rog = Team(name: "ТАГ", photo: "Rog")
+    static let zastava = Team(name: "ЗАС", photo: "Zastava")
+    static let shtorm = Team(name: "БШ", photo: "Shtorm")
     
     static let matches = [
         Match(homeTeam: dinamo,
@@ -20,24 +24,30 @@ struct MatchesData {
               homeScore: 30,
               awayScore: 24,
               date: .now,
-              tournamentName: "Чемпионат России по Регби-7"),
+              tournament: "Чемпионат России по Регби-7"),
         Match(homeTeam: enisej,
               awayTeam: krasnyjYar,
               homeScore: 0,
               awayScore: 20,
               date: .now,
-              tournamentName: "Чемпионат России по Регби-7"),
+              tournament: "Чемпионат России по Регби-7"),
         Match(homeTeam: kuban,
               awayTeam: vva,
               homeScore: 10,
               awayScore: 10,
               date: .now,
-              tournamentName: "Чемпионат России по Регби-7"),
-        Match(homeTeam: krasnyjYar,
-              awayTeam: strela,
+              tournament: "Чемпионат России по Регби-7"),
+        Match(homeTeam: lipeck,
+              awayTeam: zastava,
               homeScore: 5,
               awayScore: 33,
               date: .now,
-              tournamentName: "Чемпионат России по Регби-7"),
+              tournament: "Чемпионат России по Регби-7"),
+        Match(homeTeam: rog,
+              awayTeam: shtorm,
+              homeScore: 12,
+              awayScore: 5,
+              date: .now,
+              tournament: "Чемпионат России по Регби-7"),
     ]
 }
