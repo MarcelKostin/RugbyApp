@@ -14,6 +14,10 @@ struct ContentView: View {
             Color(red: 0.05, green: 0.1, blue: 0.25)
                 .ignoresSafeArea()
             TabView {
+                NewsView()
+                    .tabItem {
+                    Label("Новости", systemImage: "newspaper.fill")
+                                }
                 MatchListView(matches: MatchesData.matches)
                     .tabItem {
                         Label("Матчи", systemImage: "sportscourt.fill")
