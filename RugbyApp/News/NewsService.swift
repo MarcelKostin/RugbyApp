@@ -5,7 +5,7 @@ final class NewsService {
     func fetchNews() async throws -> [News] {
 
         let url = URL(
-            string: "https://rsshub.rss3.workers.dev/telegram/channel/bbbreaking"
+            string: "https://rsshub.rss3.workers.dev/telegram/channel/rugbyrussian"
         )!
 
         let (data, response) = try await URLSession.shared.data(

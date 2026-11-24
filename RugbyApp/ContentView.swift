@@ -22,7 +22,6 @@ struct ContentView: View {
                     .tabItem {
                         Label("Матчи", systemImage: "sportscourt.fill")
                     }
-                    .tint(.red)
             }
         }
     }

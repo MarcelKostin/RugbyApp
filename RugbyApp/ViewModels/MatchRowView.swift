@@ -37,7 +37,7 @@ struct MatchRowView: View {
                 .frame(maxWidth: .infinity, alignment: .leading)
                 Text("\(match.homeScore) : \(match.awayScore)")
                     .foregroundStyle(.white)
-                    .font(.system(size: 20, weight: .semibold))
+                    .font(.system(size: 24, weight: .semibold))
                     .multilineTextAlignment(.center)
                     .frame(width: 80)
                 HStack {
